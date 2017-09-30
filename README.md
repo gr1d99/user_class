@@ -1,4 +1,4 @@
 # user
 ------
 
-This repository contains a minimal python oop implementation of a `user` class, contributions are welcomed.
+This repository contains a minimal python OOP implementation of a `user` class, contributions are welcomed.
