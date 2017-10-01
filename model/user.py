@@ -1,7 +1,8 @@
 """Contains User class"""
+from .base_user import BaseUser
 
 
-class User(object):
+class User(BaseUser):
     """User class"""
     USERNAME_FIELD = 'username'
     EMAIL_FIELD = 'email'
@@ -30,3 +31,7 @@ class User(object):
         :return:
         """
         return getattr(self, User.EMAIL_FIELD)
+
+    def verify_password(self, password):
+        """verify provided password with the stored password"""
+        return self._verify_password(password)
