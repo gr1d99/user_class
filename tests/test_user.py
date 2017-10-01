@@ -1,5 +1,5 @@
 import unittest
-from user_model import User, Users
+from user_model import User
 
 
 class TestUser(unittest.TestCase):
@@ -7,7 +7,6 @@ class TestUser(unittest.TestCase):
 
     def setUp(self):
         self.user = User()
-        self.users = Users()
 
     #  -->start of User attributes<--
     def test_default_username_value(self):
@@ -26,5 +25,6 @@ class TestUser(unittest.TestCase):
         self.assertTrue(self.user.get_email is None)
     #  -->end of User attributes<--
 
-    # -->start of Users attributes<--
 
+if __name__ == '__main__':
+    unittest.main()
