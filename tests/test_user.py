@@ -6,13 +6,12 @@ from model.user import User
 
 
 class TestUser(unittest.TestCase):
-    """Tests all functionalities"""
+    """Tests all initial attributes and methods"""
 
     def setUp(self):
         """initialize User class and make it available to the test class"""
         self.user = User()
 
-    #  -->start of User attributes and methods<--
     def test_has_username_field(self):
         """
         assert whether User class has attribute USERNAME_FIELD
@@ -68,7 +67,6 @@ class TestUser(unittest.TestCase):
         :return:
         """
         self.assertIsNone(self.user.get_email)
-    #  -->end of User attributes<--
 
 
 if __name__ == '__main__':
