@@ -1,3 +1,5 @@
+![Coverage](https://github.com/gr1d99/user_class/blob/develop/coverage.svg)
+
 # user_class
 Is a project that contains a minimal Python OOP implementation of a `user` class, contributions are welcomed.
 
