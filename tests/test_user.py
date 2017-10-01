@@ -8,21 +8,10 @@ class TestUser(unittest.TestCase):
     def setUp(self):
         self.user = User()
 
-    #  -->start of User attributes<--
-    def test_default_username_value(self):
-        self.assertTrue(self.user.username is None)
+    #  -->start of User attributes and methods<--
+    def test_has_username_field(self):
+        self.assertTrue(hasattr(self.user, 'USERNAME_FIELD'))
 
-    def test_default_email_value(self):
-        self.assertTrue(self.user.email is None)
-
-    def test_default_password_value(self):
-        self.assertTrue(self.user.password is None)
-
-    def test_get_username(self):
-        self.assertTrue(self.user.get_username is None)
-
-    def test_get_email(self):
-        self.assertTrue(self.user.get_email is None)
     #  -->end of User attributes<--
 
 
