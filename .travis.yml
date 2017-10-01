@@ -5,4 +5,6 @@ python:
 script:
   - nosetests --with-coverage
   - py.test --cov=model tests/*
+after_success:
+ - coveralls
 
