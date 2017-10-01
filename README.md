@@ -33,9 +33,18 @@ Is a project that contains a minimal Python OOP implementation of a `user` class
    ```
 
 ## Tests
-- To run tests you have followed the project setup procedures.
-- Testing tools for this project are [coverage](), [nose]() and [pytest]().
+- To run tests ensure you have followed the project setup procedures.
+- Testing tools for this project are [nose](http://nose.readthedocs.io/en/latest/) and [pytest](https://docs.pytest.org/en/latest/contents.html).
 - Run tests
   ```bash
     $ py.test
   ```
+  
+  or
+  
+  ```bash
+   $ nosetest --with-coverage
+
+  ```
+  
+  or
