@@ -46,5 +46,4 @@ Is a project that contains a minimal Python OOP implementation of a `user` class
    $ nosetest --with-coverage
 
   ```
-  
-  or
+ 
